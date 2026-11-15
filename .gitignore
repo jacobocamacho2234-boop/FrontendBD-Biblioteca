@@ -1,0 +1,15 @@
+# Maven / NetBeans
+target/
+nb-configuration.xml
+nbactions.xml
+
+# Contraseñas locales: no subir
+conexion.properties
+
+# Java
+*.class
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db

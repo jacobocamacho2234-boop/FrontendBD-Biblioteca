@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.biblioteca</groupId>
+    <artifactId>biblioteca-frontend-bd</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+    <name>biblioteca-frontend-bd</name>
+
+    <properties>
+        <maven.compiler.release>21</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Clase que se ejecuta con el botón Run del proyecto: la ventana principal -->
+        <exec.mainClass>vista.VentanaPrincipal</exec.mainClass>
+    </properties>
+
+    <dependencies>
+        <!--
+          Back end: el .jar generado a partir del repositorio biblioteca-backend.
+          Para actualizarlo: en el proyecto del back end, Clean and Build, y copiar
+          target/biblioteca-backend-1.0.jar a lib/biblioteca-backend.jar (reemplazando el anterior).
+        -->
+        <dependency>
+            <groupId>com.biblioteca</groupId>
+            <artifactId>biblioteca-backend</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/biblioteca-backend.jar</systemPath>
+        </dependency>
+
+        <!-- Driver JDBC de MariaDB (se descarga solo) -->
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>3.3.3</version>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+</project>

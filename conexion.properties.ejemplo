@@ -1,0 +1,5 @@
+# PLANTILLA. Copien este archivo con el nombre "conexion.properties" (sin ".ejemplo")
+# y pongan ahí su usuario y contraseña de MariaDB.
+url=jdbc:mariadb://localhost:3306/biblioteca
+usuario=root
+password=
