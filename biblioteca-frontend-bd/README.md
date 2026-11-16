@@ -39,4 +39,6 @@ Cuando el back end cambie:
 
 ## Integrantes
 
-(Nombres del equipo)
+Leon Gamez Fernando
+Camacho Guerra Jacobo
+Garcia Rosales Karen Nicol
